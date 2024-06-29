@@ -1,8 +1,29 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "About Me";
 }
 
 <h2>About Me</h2>
-<p> I am a passionate and motivated Software Engineering graduate from the Sri Lanka Institute of Information Technology (SLIIT). Eager to learn new technologies and a dedicated team player, I thrive under pressure and consistently meet deadlines. I am excited to apply my skills and enthusiasm to make a positive impact at your organization.</p>
 
+<img src="~/images/me.jpg" alt="Dhanuka Balasooriya" class="rounded-img" />
+
+<p>
+    I am a passionate and motivated Software Engineering graduate from the Sri Lanka Institute of Information Technology (SLIIT). Eager to learn new technologies and a dedicated team player, I thrive under pressure and consistently meet deadlines. I am excited to apply my skills and enthusiasm to make a positive impact at your organization.
+</p>
+
+<p>
+    <a href="~/files/Dhanuka Balasooriya.pdf" download>Download my CV</a>
+</p>
+
+<style>
+    /* Rounded image with hover effect */
+    .rounded-img {
+        border-radius: 80%; /* Adjust for desired roundness (e.g., 10px for subtle corners) */
+        width: 160px; /* Maintain desired width */
+        height: auto;
+        transition: transform 0.3s ease; /* Smooth hover transition */
+    }
+
+        .rounded-img:hover {
+            transform: scale(1.1); /* Zoom on hover (adjust for desired magnification) */
+        }
+</style>

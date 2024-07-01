@@ -2,7 +2,153 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Include Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!-- Additional CSS for styling -->
+<style>
+    /* General styles for body */
+    body {
+        font-family: Arial, sans-serif;
+        background: #DBD5D5; /* Light background */
+        color: #333;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Text center and spacing */
+    .text-center {
+        padding: 20px;
+    }
+
+    /* Rounded image with hover effect */
+    .rounded-img {
+        border-radius: 50%;
+        width: 155px;
+        height: auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .rounded-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    /* Section headers */
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #987B71; /* Darker brown for headings */
+    }
+
+    /* Links styling */
+    a {
+        color: #987B71; /* Darker brown for links */
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+            color: #FCE6E6; /* Lighter brown on hover */
+        }
+
+    /* Paragraph styling */
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* List styling */
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        ul li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            /* Hover effect for list items */
+            ul li:hover {
+                background: #FCE6E6; /* Lighter brown on hover */
+                color: #333; /* Darker text on hover */
+            }
+
+    /* Button styling */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: 2px solid #987B71; /* Darker brown border */
+        border-radius: 25px;
+        background: #f0f0f0; /* Lighter background for buttons */
+        color: #333; /* Darker text for buttons */
+        text-align: center;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+        .btn:hover {
+            background: #987B71; /* Darker brown on hover */
+            color: #fff; /* Lighter text on hover */
+        }
+</style>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="~/images/me.jpg" alt="Dhanuka Balasooriya" class="rounded-img" />
+        <p>
+            I am a passionate and motivated Software Engineering graduate from the Sri Lanka Institute of Information Technology (SLIIT). Eager to learn new technologies and a dedicated team player, I thrive under pressure and consistently meet deadlines. I am excited to apply my skills and enthusiasm to make a positive impact at your organization.
+        </p>
+        <p>
+            <a href="~/files/Dhanuka Balasooriya.pdf" download class="btn">Download my CV</a>
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Aeturnum Lanka (Pvt) Ltd (Team - Incentivio)</h3>
+        <p><strong>Trainee Software Engineer (Android)</strong> (1st August 2022 - 31st July 2023)</p>
+        <ul>
+            <li>Contributed to mobile application development using Java, Android Studio, Google Cloud Console, Firebase, and GitHub.</li>
+            <li>Published apps on Playstore using Google Play Console.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>Ongoing Projects:</h3>
+        <ul>
+            <li><a href="https://holidaysri.com/">Holiday Sri</a></li>
+        </ul>
+        <h3>Final Year Research:</h3>
+        <p>“Baby Bump: Monitoring System for Pregnant Mothers and Babies”</p>
+        <ul>
+            <li>Mobile app – Drug Effect Predictor</li>
+            <li>Technologies: Python, React Native, Firebase, GitLab</li>
+            <li>Published in I2CT 2024 IEEEXPLORER</li>
+            <li><a href="https://kishan20-00.github.io/Baby_Bump/#timeline">Details About Research</a></li>
+            <li><a href="https://ieeexplore.ieee.org/document/10544017">Research Paper IEEE</a></li>
+            <li><a href="https://github.com/DhanukaDB/Baby_Bump">Project Repository</a></li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages & Frameworks: React.js, Node.js, Express.js, React Native, Android (Java), Php, Flutter, Kotlin, .NET</li>
+            <li>Databases: NoSQL (MongoDB), MySQL, Firebase</li>
+            <li>Tools & Technologies: Android Studio, Google Play Console, Eclipse, GIT, GitHub, GitLab, Azure, Docker, Expo</li>
+            <li>Soft Skills: Self-motivated, Decision making, Project management, Ability to work with challenges</li>
+        </ul>
+    </section>
 </div>
